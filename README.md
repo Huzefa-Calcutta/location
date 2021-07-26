@@ -15,8 +15,7 @@ low_precision_level: lower precision level for geo code
 do_kernel_transform: Boolean variable whether to do Kernel approximation of features
 do_normalise_col: Boolean variable whether to scale column or not. (True scale feature using Robust scaler from sklearn. if False no sclaing is done
 Additional keyword arguments could also be passed. The BaseModel class has best_model attribute which is essentially sklearn pipeline including feature processing and model. Depending on the alogorithm you choose, the feature processing steps could be customised. This Class can also be used for Classification kind of problems.
- 
-The current model in production uses approach one. 
+
 - Python Files
   1. `model/model.py` Defines the generic model class which can be used for either regression or even classification problems.
   2. `inference.py` Inference script. It takes config file as input
